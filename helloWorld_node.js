@@ -17,8 +17,8 @@ http.createServer(function (request, response){
         }
         else{
             response.writeHead(200, {'Content-Type': ''+mime+'; charset="utf-8"'});
-//             response.write(data.toString());
-              response.end("Hello World!");
+            response.write(data.toString());
+            response.end("Hello World!");
         }
     });
 }).listen(8080);
