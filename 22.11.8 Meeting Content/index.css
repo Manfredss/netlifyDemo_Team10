@@ -1,0 +1,26 @@
+.redBoldText{
+	color:mediumvioletred;
+	font-weight: bold;
+	font-size: 18pt
+}
+
+#intro{
+	font-weight: bold;
+	font-size: 21;
+	background-color: greenyellow
+}
+
+#sec1{
+	font-size: 21pt;
+	/* font-color: red; */
+	color: cadetblue;
+}
+
+.outer{
+	border: 3px solid skyblue;
+	background-color: rgb(210, 210, 210);
+}
+
+li{
+	font-size: 18pt
+}
