@@ -7,8 +7,8 @@
     <!-- </div> -->
 
     <div>
-      <button type="primary" style="font-size: 25px;" @click="PreviousImage()">Previous Image</button>
-      <button type="primary" style="font-size: 25px;" @click="NextImage()">Next Image</button>
+      <button type="primary" style="font-size: 25px;" @click="PreviousImage">Previous Image</button>
+      <button type="primary" style="font-size: 25px;" @click="NextImage">Next Image</button>
     </div>
     
   </div>
@@ -18,30 +18,32 @@
 export default{
   data(){
     return{
-      imgs: "assets/image1.jpg",
+      i : 0,
+      imgs: "/src/assets/image1.jpg",
       imgArr:[
-        "assets/image1.jpg",
-        "assets/image2.jpg",
-        "assets/logo-Stanford_University-2020_08_11_14_58_29.png",
-        "assets/Ferrari F1-75.jpg",
-        "assets/image5.jpg",
+        "/src/assets/image1.jpg",
+        "/src/assets/image2.jpg",
+        "/src/assets/logo-Stanford_University-2020_08_11_14_58_29.png",
+        "/src/assets/Ferrari F1-75.jpg",
+        "/src/assets/image5.jpg",
       ],
     };
   },
   methods: {
-    i: 0,
     PreviousImage(){
       // var msg = document.getElementById("pic");
-      if (i - 1 < 0)
-        i = 4;
-      img = imgArr[data().i];
+      if (this.i - 1 < 0)
+        this.i = 4;
+      console.log(this.i);
+      imgs = imgArr[this.i];
       // msg.src = data.imgArr[i];
     },
     NextImage(){
       // var msg = document.getElementById("pic");
-      if (i + 1 > 4)
-        i = 0;
-      imgs = imgArr[i];
+      if (this.i + 1 > 4)
+        this.i = 0;
+      console.log(this.i);
+      imgs = imgArr[this.i];
       // msg.src = data.imgArr[i];
     }
   },
