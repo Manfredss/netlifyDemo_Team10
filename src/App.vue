@@ -1,10 +1,8 @@
 <template>
   <div>
     <h1 class="green">Welcome!</h1>
-    <p class="green">This is a test web page</p>
-    <!-- <div> -->
-        <img id="pic" width="840" height="600" :src="imgs">
-    <!-- </div> -->
+    <p class="green">This is a demo web page</p>
+    <img id="pic" width="840" height="600" :src="imgs">
 
     <div>
       <button type="primary" style="font-size: 25px;" @click="PreviousImage">Previous Image</button>
@@ -30,21 +28,17 @@ export default{
     };
   },
   methods: {
-    PreviousImage(){
-      // var msg = document.getElementById("pic");
-      if (this.i - 1 < 0)
+    PreviousImage: function(){
+      if (this.i < 0)
         this.i = 4;
-      console.log(this.i);
-      imgs = imgArr[this.i];
-      // msg.src = data.imgArr[i];
+      this.imgs = this.imgArr[this.i];
+      this.i -= 1;
     },
-    NextImage(){
-      // var msg = document.getElementById("pic");
-      if (this.i + 1 > 4)
+    NextImage: function(){
+      if (this.i > 4)
         this.i = 0;
-      console.log(this.i);
-      imgs = imgArr[this.i];
-      // msg.src = data.imgArr[i];
+      this.imgs = this.imgArr[this.i];
+      this.i += 1;
     }
   },
 }
