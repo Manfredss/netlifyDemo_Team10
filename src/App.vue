@@ -17,7 +17,7 @@ export default{
   data(){
     return{
       i : 0,
-      imgs: "/src/assets/image1.jpg",
+      imgs: "/assets/image1.jpg",
       imgArr:[
         "/src/assets/image1.jpg",
         "/src/assets/image2.jpg",
