@@ -17,13 +17,13 @@ export default{
   data(){
     return{
       i : 0,
-      imgs: "http://dx.doi.org/10.1109/VISUAL.1990.146359",
+      imgs: "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/1990/VisC.6.1.png",
       imgArr:[
-        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
-        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
+        "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/1990/VisC.6.1.png",
+        "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/1990/VisC.6.4.png",
         "/src/assets/logo-Stanford_University-2020_08_11_14_58_29.png",
-        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
-        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
+        "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/2019/VASTC.93.13.png",
+        "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/2019/VASTC.93.11.png",
       ],
     };
   },
