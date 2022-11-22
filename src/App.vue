@@ -17,13 +17,13 @@ export default{
   data(){
     return{
       i : 0,
-      imgs: "/src/assets/image1.jpg",
+      imgs: "http://dx.doi.org/10.1109/VISUAL.1990.146359",
       imgArr:[
-        "/src/assets/image1.jpg",
-        "/src/assets/image2.jpg",
+        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
+        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
         "/src/assets/logo-Stanford_University-2020_08_11_14_58_29.png",
-        "/src/assets/Ferrari F1-75.jpg",
-        "/src/assets/image5.jpg",
+        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
+        "http://dx.doi.org/10.1109/VISUAL.1990.146359",
       ],
     };
   },
