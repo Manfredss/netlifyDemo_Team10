@@ -21,7 +21,7 @@ export default{
       imgArr:[
         "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/1990/VisC.6.1.png",
         "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/1990/VisC.6.4.png",
-        "/src/assets/logo-Stanford_University-2020_08_11_14_58_29.png",
+        "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/2019/VASTC.93.4.png",
         "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/2019/VASTC.93.13.png",
         "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/2019/VASTC.93.11.png",
       ],
