@@ -1,14 +1,54 @@
 <template>
   <div>
     <h1 class="green">Welcome!</h1>
-    <p class="green">This is a newer version of Image browser! </p>
+    <!-- <p class="green"></p> -->
     <img id="pic" width="840" height="600" :src="imgs">
 
     <div>
       <button type="primary" style="font-size: 25px;" @click="PreviousImage">Previous Image</button>
-      <button type="primary" style="font-size: 25px;" @click="NextImage">Next Image</button>
+      <button type="primary" style="font-size: 25px; left: 507px;" @click="NextImage">Next Image</button>
       <!-- <button type="primary" style="font-size: 25px;" @click="LoadURL">Load URL</button> -->
+    </div>
   </div>
+
+  <div>
+      <p>Q1. What's the image type?<br>
+        <input type="radio" id="1" name="Q1" style="left: 60px"><label for="1" style="left:70px;">Black & Whtie</label>
+        <input type="radio" id="2" name="Q1" style="left:100px;"><label for="2" style="left:110px;">Greyscale</label>
+        <input type="radio" id="3" name="Q1" style="left:140px;"><label for="3" style="left:150px;">Colour</label>
+      </p>
+      <br>
+      <p>Q2. Is the color used for Aesthetics or Data Visualisation?<br>
+        <input type="radio" id="1" name="Q2" style="left: 60px"><label for="1" style="left:70px;">Aesthetics</label>
+        <input type="radio" id="2" name="Q2" style="left:100px;"><label for="2" style="left:110px;">Data Visualisation</label>
+        <input type="radio" id="3" name="Q2" style="left:140px;"><label for="3" style="left:150px;">Not sure</label>
+      </p>
+      <br>
+      <p>Q3. Is a colour mapping legend showed?<br>
+        <input type="radio" id="1" name="Q3" style="left: 60px"><label for="1" style="left:70px;">Yes</label>
+        <input type="radio" id="2" name="Q3" style="left:100px;"><label for="2" style="left:110px;">No</label>
+        <input type="radio" id="3" name="Q3" style="left:140px;"><label for="3" style="left:150px;">Not sure</label>
+      </p>
+      <br>
+      <p>Q4. How many colours are used in this image?<br>
+        <textarea style="font-size: 25px; text-align: center; width: 30%; height: 10%; left: 30px;"></textarea>
+        <input type="radio" id="1" style="left:140px;"><label for="1" style="left:150px;">Not sure</label>
+      </p>
+      <br>
+      <p>Q5. Which colour mapping is used, continuous or categorical?<br>
+        <input type="radio" id="1" name="Q5" style="left: 60px"><label for="1" style="left:70px;">continuous</label>
+        <input type="radio" id="2" name="Q5" style="left:100px;"><label for="2" style="left:110px;">Categorical</label>
+        <input type="radio" id="3" name="Q5" style="left:140px;"><label for="3" style="left:150px;">Not sure</label>
+      </p>
+      <br>
+      <p>Q6. From 1-5, how would you rank the difficulty of identifying this image?<br>
+        <input type="radio" id="1" name="Q6" style="left: 60px"><label for="1" style="left:70px;">1</label>
+        <input type="radio" id="2" name="Q6" style="left:100px;"><label for="2" style="left:110px;">2</label>
+        <input type="radio" id="3" name="Q6" style="left:140px;"><label for="3" style="left:150px;">3</label>
+        <input type="radio" id="4" name="Q6" style="left:180px;"><label for="4" style="left:190px;">4</label>
+        <input type="radio" id="5" name="Q6" style="left:220px;"><label for="5" style="left:230px;">5</label>
+      </p>
+      <button style="font-size: 30px; left: 400px; top: 10px;">submit</button>
   </div>
 </template>
 
@@ -20,20 +60,9 @@ export default{
       i : 0,
       imgs: "https://web.cse.ohio-state.edu/~chen.8028/VisPubImages/Images/1990/VisC.6.1.png",
       imgArr: urlJson,
-      // [{
-      //   imageID: null,
-      //   name: null,
-      //   url: null,
-      //   doi: null,
-      //   year: null,
-      // }],
     };
   },
-  // mounted() {
-  //   axios
-  //       .get("./url.json")
-  //       .then(response => (this.imgArr = response.data));
-  // },
+
   methods: {
     PreviousImage: function(){
       if (this.i < 0)
@@ -77,11 +106,12 @@ export default{
 h1{
     font-weight: 500;
     font-size: 2.6rem;
-    top: -10px;
+    top: -60px;
 }p{
-  font-weight: 500;
-  font-size: 1.8rem;
+  font-weight: 450;
+  font-size: 1.5rem;
   top: -10px;
+  left: 60px;
 }
 </style>
 
@@ -94,4 +124,3 @@ h1{
               }
             });
           }) -->
-
