@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p style="font-size: 39px; left: -10px; top: -120px; font-weight:500">COMP2002 Team 10 Use of Color: Prototype Demo</p>
     <img id="pic" width="840" height="600" :src="imgs">
 
     <div>
@@ -42,7 +43,7 @@
         <input type="radio" id="3" name="Q5" style="left:140px;"><label for="3" style="left:150px;">Not sure</label>
       </p>
       <br>
-      
+
       <p>Q6. From 1-5, how would you rank the difficulty of identifying this image?<br>
         <input type="radio" id="1" name="Q6" style="left: 60px"><label for="1" style="left:70px;">1</label>
         <input type="radio" id="2" name="Q6" style="left:100px;"><label for="2" style="left:110px;">2</label>
