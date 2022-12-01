@@ -31,7 +31,7 @@
       </p>
       <br>
       <p>Q4. How many colours are used in this image?<br>
-        <textarea style="font-size: 25px; text-align: center; width: 30%; height: 10%; left: 30px;"></textarea>
+        <textarea style="font-size: 25px; text-align: center; resize: none" placeholder="Enter the number" :rows="1"></textarea>
         <input type="radio" id="1" style="left:140px;"><label for="1" style="left:150px;">Not sure</label>
       </p>
       <br>
@@ -112,6 +112,13 @@ h1{
   font-size: 1.5rem;
   top: -10px;
   left: 60px;
+}label{
+  position: relative
+}textarea{
+  width: 240px;
+  height: 50px;
+  left: 90px; 
+  top: 15px;
 }
 </style>
 
