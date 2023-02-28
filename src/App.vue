@@ -1,5 +1,4 @@
 <template>
-  
   <div id="user">
     <p style="font-size: 39px; left: -50px; top: -600px; font-weight:500">COMP2002 Team 10 Use of Color: Prototype Demo</p>
     <label style="font-size: 36px; left: 950px; top: -90px;">User name:</label>
