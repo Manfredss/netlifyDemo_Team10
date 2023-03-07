@@ -21,7 +21,7 @@
       <button style="left: 690px; top:-168px; font-size:30px; font-weight:bolder;" @click="Annotation">Annotation</button>
       <button style="left: 720px; top:-168px; font-size:30px; font-weight:bolder;" @click="Validation">Validation</button>
       <button style="left: 750px; top:-168px; font-size:30px; font-weight:bolder;" @click="Exploration">Exploration</button>
-      <a href="http://localhost:5173" style="left: 1380px; top:-165px; font-size:42px;">Log out</a>
+      <a href="https://trynetlifyqwf.netlify.app/" style="left: 1380px; top:-165px; font-size:42px;">Log out</a>
       
       <!-- <button type="radio" style="font-size: 25px;" @click="Logout">log out</button> -->
     <!-- </div> -->
